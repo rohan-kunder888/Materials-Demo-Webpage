@@ -1,0 +1,382 @@
+    html{
+    }
+
+    body{
+      margin: 0px;
+      padding: 0px;
+    }
+    .header__nav{
+      background: rgb(232, 233, 235);
+      height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    .nav__item{
+      display: inline-block;
+      padding: 0px;
+      width: 31%;
+    }
+    .logoimage{
+      width:250px;
+      height:50px;
+    }
+    .menubutton{
+      display: none;
+    }
+    .search__bar{
+      width:300px;
+      height: 20px;
+    }
+    .searchicon__image{
+      height: 20px;
+      width: 20px;
+      margin-top: 3px;
+    }
+    .header_button{
+      display: none;
+    }
+    .nav__searchlist{
+      padding: 0px;
+      margin: 0px;
+    }
+    .list__item{
+      display: inline-block;
+      margin-right: 5px;
+      font-size: 12px;
+    }
+    .listdiv__item{
+      display: inline-block;
+      margin: 15px 0px 0px 40px;
+    }
+    .div__child{
+    height:1100px;
+    }  
+    .searchbardiv{
+      display: flex;
+      margin-top: 20px;
+    }
+
+
+
+    /*central main section with data*/
+    .centraldiv {
+        display: flex;
+    }
+    .centersection{
+      width: 70%;
+      background-color: rgba(245, 245, 245);
+      padding-left: 100px;
+      padding-right: 8px;
+    }
+    .table{
+      border: 1px solid;
+      text-align: center;
+    }
+
+    th{
+      background-color: rgba(67, 68, 69);
+      height: 40px;  
+    }
+    td{
+      height: 40px;
+    }
+    a{
+      text-decoration: none;
+    }
+    h2 h1{
+      color: rgba(0, 14, 94);
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    .secondrow>td{
+      background-color: rgba(215, 216, 217);
+    }
+    .solventrow, .temperaturerow{
+      background-color: rgba(67, 163, 230,0.2);
+      text-align: left;
+      padding-left: 20px;
+    }
+
+
+    /*aside section*/
+    .aside{
+      background: rgba(224, 224, 220,0.8);
+      width: 30%;
+      padding-left: 20px;
+    }
+    .aside__button{
+      height: 40px;
+      width: 200px;
+      color: rgb(67, 163, 230);
+      margin-top:10px;
+      margin-bottom: 10px;
+    }
+    .downloadtable__button{
+      background-color: rgba(166, 213, 245,0.5);
+      border: 1px solid rgb(67, 163, 230)
+    }
+    .sociallist__items{
+      display: inline-block;
+    }
+    .socialicon{
+      height: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .asidelist{
+      margin-top: 50px;
+    }
+    .asidelist__dt{
+      margin-bottom: 20px;
+      font-weight: bolder;
+    }
+    .asidelist__items{
+      color: rgb(67, 163, 230);
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    .asidelist__items>a{
+      color: rgb(67, 163, 230)
+    }
+
+    
+    /**/
+    .footersection{
+      padding-right: 20px;
+      margin-left: 20px;
+    }
+    .footerlist__item{
+      display: inline-block;
+    }
+    .footeranchor{
+      text-decoration: none;
+      color: gray;
+    }
+    .footerheading{
+      margin-left: 40px;
+    }
+    .footertext{
+      color: gray;
+      margin-bottom: 5px; 
+      margin-left: 40px;
+    }
+
+
+/*media queries*/
+
+@media screen and (max-width:786px) {
+  .header__nav{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .logoimage{
+    margin: 0px;
+  }
+  .search__bar{
+    width:100%;
+    height:20px;
+    margin-top:0px;
+  }
+  .searchicon__image{
+    height: 20px;
+    width: 20px;
+    margin-top: 3px;
+  }
+  .nav__searchlist ,.list__item, .nav__listdiv{
+    display: none;
+  }
+  .header_button{
+    display: inline;
+  }
+  .centersection{
+    width: 100%;
+  }
+  hr{
+    width: 100%;
+  }
+  .aside{
+    display: none;
+  }
+
+  .nav__searchdiv{
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .nav__logodiv{
+    display: flex;
+  }
+
+  .menubutton{
+    width: 30px;
+    font-size: 20px;
+    background-color: gray;
+  }
+
+  table{
+    width: 100%;
+  }
+
+  .centersection{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  button.menubutton{
+    display: flex;
+    height: 40px;
+    width: 50%;
+    background-color: rgba(207, 208, 211,0.7);
+    margin-top: 20px 10px 20px 0px;
+    /*margin: 20px 80px;*/
+  }
+  .searchbardiv{
+    width: 100%;
+    margin: 20px 80px;
+  }
+}
+
+
+
+
+@media only screen 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  { 
+  .header__nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logoimage{
+    margin: 0px;
+  }
+  .search__bar{
+    width:100%;
+    height: 20px;
+    margin-top:0px;
+  }
+  .searchicon__image{
+    height: 20px;
+    width: 20px;
+    margin-top: 3px;
+  }
+    .nav__searchlist, .list__item, .nav__listdiv{
+    display: none;
+  }
+    .header_button{
+    display: inline;
+  }
+    .centersection{
+    width: 100%;
+  }
+    hr{
+    width: 100%;
+  }
+    .aside{
+    display: none;
+  }
+    .nav__searchdiv{
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+    .nav__logodiv{
+    display: flex;
+  }
+    table{
+    width: 100%;
+  }
+    .centersection{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  button.menubutton{
+    display: flex;
+    height: 40px;
+    width: 50%;
+    background-color: rgba(207, 208, 211,0.7);
+    margin: 20px 80px;
+  }
+  .searchbardiv{
+    width: 100%;
+    margin: 20px 80px;
+  }
+
+}
+
+
+
+@media screen 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  {
+    .header__nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    .logoimage{
+      margin: 0px;
+  }
+    .search__bar{
+      width:100%;
+      height: 20px;
+      margin-top: 0px;
+  }
+    .searchicon__image{
+      height: 20px;
+      width: 20px;
+      margin-top: 3px;
+  }
+    .nav__searchlist ,.list__item, .nav__listdiv{
+      display: none;
+  }
+    .header_button{
+      display: inline;
+  }
+    .centersection{
+      width: 100%;
+  }
+    hr{
+      width: 100%;
+  }
+    .aside{
+      display: none;
+  }
+    .nav__searchdiv{
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+    .nav__logodiv{
+    display: flex;
+  }
+    table{
+    width: 100%;
+    margin-right: 
+  }
+    .centersection{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  button.menubutton{
+    display: flex;
+    height: 40px;
+    width: 50%;
+    background-color: rgba(207, 208, 211,0.7);
+    margin: 20px 80px;
+  }
+  .searchbardiv{
+    width: 100%;
+    margin: 20px 80px;
+  }
+}
+
